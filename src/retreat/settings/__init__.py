@@ -25,7 +25,7 @@ SECRET_KEY = '8*49k5=%)j-&_f@grel@1h&!r+4h_2qv=-u^$bbg&a0o9!r2ct'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0"]
+ALLOWED_HOSTS = ["retreat.mvrkumxssk.us-east-1.elasticbeanstalk.com", "localhost", "0.0.0.0"]
 
 
 # Application definition
@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'retreat.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('RDS_NAME', 'retreat'),
-        'USER': os.environ.get('RDS_USER', 'retreat'),
+        'NAME': os.environ.get('RDS_DB_NAME', 'retreat'),
+        'USER': os.environ.get('RDS_USERNAME', 'retreat'),
         'PASSWORD': os.environ.get('RDS_PASSWORD', 'retreat'),
-        'HOST': os.environ.get('RDS_HOST', 'localhost'),
+        'HOST': os.environ.get('RDS_HOSTNAME', 'localhost'),
         'PORT': os.environ.get('RDS_PORT', 5432),
     }
 }
