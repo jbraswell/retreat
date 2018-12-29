@@ -25,7 +25,7 @@ SECRET_KEY = '8*49k5=%)j-&_f@grel@1h&!r+4h_2qv=-u^$bbg&a0o9!r2ct'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["retreat.mvrkumxssk.us-east-1.elasticbeanstalk.com", "localhost", "0.0.0.0"]
+ALLOWED_HOSTS = ["retreat.mvrkumxssk.us-east-1.elasticbeanstalk.com", "localhost", "0.0.0.0", "retreat.jbraz.com"]
 
 
 # Application definition
