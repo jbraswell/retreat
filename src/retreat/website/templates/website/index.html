@@ -23,6 +23,23 @@ activity. It will be a rigorous, experiential taste of all twelve steps. There w
   A  deposit of $25, non-refundable except for those in the waiting line who didn't get to go, will hold your place. The remainder is due on site.  Talk to me if you need some help with this registration. There are also those who have volunteered to help with this. If you are one who can help, let me know too.</p>
 <p>You will receive a receipt for this transaction from Paypal. Please hold onto it. I will keep track of your payment status and will communicate with you via e-mail between now and then. Make sure I have your e-mail address. Though this paypal account is associated with a different address, my preferred e-mail is <a href="mailto:ron.hofius@gmail.com">ron.hofius@gmail.com</a>. <br />
   <br />
+<!-- <form ACTION="https://www.paypal.com/cgi-bin/webscr" METHOD=POST> -->
+<form ACTION="https://www.sandbox.paypal.com/cgi-bin/webscr" METHOD="POST">
+    <input type="hidden" name=cmd value="_xclick">
+    <!-- <input type="hidden" name=business value="jon.braswell@gmail.com"> -->
+    <input type="hidden" name="business" value="jon.braswell+retreat@gmail.com">
+    <input type="hidden" name="no_note" value=1>
+    <input type="hidden" name="currency_code" value=USD>
+    <input type="hidden" name="notify_url" value="http://retreat.jbraz.com/ipn/">
+    Your Name: <input type=text name="item_name" size=25 value="">
+    <br />
+    <br />
+    Pay this amount to hold my place: $25
+    <input type=hidden name=amount value="25.00">
+    <br />
+    <br />
+    <input type=submit name=submit value="Pay now by Paypal">
+</form>
 
 </p>
 </body>
