@@ -12,6 +12,7 @@ class Attendee(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField(null=True)
     amount_paid = models.DecimalField(decimal_places=2, max_digits=10)
+    fee = models.DecimalField(decimal_places=2, max_digits=10, null=True)
     phone = models.CharField(null=True, max_length=255)
     creation_date = models.DateTimeField(auto_now_add=True)
     payment_type = models.CharField(
